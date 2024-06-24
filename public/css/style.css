@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    background-color: #2c5334;
+}
+
+.navbar .form-control {
+    width: 100%;
+}
+
+.navbar .btn {
+    width: auto;
+}
+
+.fixed-header {
+    background-color: #f8f9fa;
+    z-index: 1030;
+}
+
+.content-wrapper {
+    margin-top: 140px; /* Adjust based on the height of the fixed elements */
+}
+
+.accordion-button {
+    text-transform: uppercase;
+}
+
+.accordion-button .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion-button .row {
+    width: 100%;
+}
+
+.accordion-button .col-3,
+.accordion-button .col-5,
+.accordion-button .col-4 {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .navbar .form-control {
+        width: auto;
+    }
+
+    .navbar .btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content-wrapper {
+        margin-top: 180px; /* Adjust based on the height of the fixed elements for smaller screens */
+    }
+
+    .accordion-button .col-3,
+    .accordion-button .col-5,
+    .accordion-button .col-4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .accordion-button .row {
+        flex-direction: row;
+    }
+}
