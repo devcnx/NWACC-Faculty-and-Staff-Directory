@@ -52,8 +52,8 @@ class Database
 
         $decodedJson = json_decode($fileContents, true);
 
-        if ($decodedJson === null) {
-            throw new Exception("Failed to decode JSON from file: " . $filePath);
+        if ($decodedJson === NULL) {
+            throw new Exception("Failed to decode JSON data.");
         }
 
         if (!isset($decodedJson['Report_Entry'])) {

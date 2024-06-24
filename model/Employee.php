@@ -149,10 +149,9 @@ class Employee
         $this->displayDetail('Title', $this->job->jobDetails->businessTitle);
         $this->displayDetail('Work Phone(s)', $this->workPhones);
         $this->displayDetail('Primary Work Email', $this->job->jobDetails->primaryWorkEmail, true);
-        $this->displayDetail('Job Classifications', $this->job->jobDetails->getJobClassifications());
-        $this->displayDetail('Division', $this->job->jobDetails->academicUnits);
+        // $this->displayDetail('Division', $this->job->jobDetails->academicUnits);
         $this->displayDetail('Primary Work Space', $this->job->jobDetails->primaryWorkSpace);
-        $this->displayDetail('Supervisor', $this->job->jobDetails->getSupervisor());
+        // $this->displayDetail('Supervisor', $this->job->jobDetails->getSupervisor());
     }
 }
 ?>

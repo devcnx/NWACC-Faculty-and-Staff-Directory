@@ -22,7 +22,6 @@ if ($searchQuery) {
             $employeeObj->job->jobDetails->businessTitle,
             $employeeObj->job->jobDetails->activeStatus,
             $employeeObj->job->jobDetails->timeType,
-            $employeeObj->job->jobDetails->jobClassifications,
             $employeeObj->job->jobDetails->academicUnits,
             $employeeObj->job->jobDetails->primaryWorkSpace,
         ];
